@@ -3,3 +3,4 @@
 terraform.tfstate*
 *.tfvars
 secrets.txt
+azurerepo.code-workspace
