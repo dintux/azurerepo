@@ -1,0 +1,35 @@
+az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/8a084fef-b545-4e91-a652-eb4458ea49b7"
+
+
+ "appId": "76e29c87-7cf2-4e20-8fd4-55ff1088ec5f",
+  "displayName": "azure-cli-2025-03-06-05-48-58",
+  "password": "YNj8Q~LitzyGykHdavefOfOspvUyFgvdkxnyWcW8",
+  "tenant": "27590306-f365-48b7-aac3-adfd90bb9ad6"
+
+
+  az login --service-principal -u 76e29c87-7cf2-4e20-8fd4-55ff1088ec5f -p YNj8Q~LitzyGykHdavefOfOspvUyFgvdkxnyWcW8 --tenant 27590306-f365-48b7-aac3-adfd90bb9ad6
+
+
+
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "27590306-f365-48b7-aac3-adfd90bb9ad6",
+    "id": "8a084fef-b545-4e91-a652-eb4458ea49b7",
+    "isDefault": true,
+    "managedByTenants": [],
+    "name": "MSDN Platforms Subscription",
+    "state": "Enabled",
+    "tenantId": "27590306-f365-48b7-aac3-adfd90bb9ad6",
+    "user": {
+      "name": "76e29c87-7cf2-4e20-8fd4-55ff1088ec5f",
+      "type": "servicePrincipal"
+    }
+  }
+
+
+
+  # PowerShell
+> $env:ARM_CLIENT_ID = "76e29c87-7cf2-4e20-8fd4-55ff1088ec5f"
+> $env:ARM_CLIENT_SECRET = "YNj8Q~LitzyGykHdavefOfOspvUyFgvdkxnyWcW8"
+> $env:ARM_TENANT_ID = "27590306-f365-48b7-aac3-adfd90bb9ad6"
+> $env:ARM_SUBSCRIPTION_ID = "8a084fef-b545-4e91-a652-eb4458ea49b7"
