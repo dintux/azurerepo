@@ -1,5 +1,5 @@
 variable "prefix" {
-    
+    default = "dintuxdemo"
 }
 
 variable "location" {
